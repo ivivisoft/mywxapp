@@ -1,0 +1,40 @@
+extends ../node_modules/jade-bootstrap/_bootstrap
+append styles
+    // Custom styles for this template
+    link(href='../css/dashboard.css', rel='stylesheet')
+block body
+    nav.navbar.navbar-inverse.navbar-fixed-top
+        .container-fluid
+            .navbar-header
+                button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='#') 微信公众号设置
+
+    .container-fluid
+        .row
+            .col-sm-3.col-md-2.sidebar
+                ul.nav.nav-sidebar
+                    li
+                        a(href='/') 预览
+                    li.active
+                        a(href='/getMenuList')
+                            | 自定义菜单管理
+                            span.sr-only (current)
+                    li
+                        a(href='#') 消息自动回复管理
+                    li
+                        a(href='#') 关于
+
+            .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+                h1.page-header 菜单预览
+                .row.placeholders
+                    form(action='/createMenu',method='post')
+                        textarea.form-control(rows=25,name='content') !{JSON.stringify(data, undefined, 4)}
+
+                        button.btn.btn-lg.btn-primary(type='submit') 提交
+
+                if !{result}
+                   h3 !{result}

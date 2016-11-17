@@ -1,0 +1,68 @@
+{
+    "button": [
+        {
+            "name": "平台咨讯",
+            "sub_button": [
+                {
+                    "type": "view",
+                    "name": "平台介绍",
+                    "url": "http://t.yinmimoney.com/aboutUs/h5/aboutus",
+                    "sub_button": []
+                },
+                {
+                    "type": "click",
+                    "name": "微信免登录",
+                    "key": "NO_NEED_LOGIN",
+                    "sub_button": []
+                },
+                {
+                    "type": "view",
+                    "name": "App下载",
+                    "url": "http://t.yinmimoney.com/activity/h5/downloadApp",
+                    "sub_button": []
+                }
+            ]
+        },
+        {
+            "name": "我要投资",
+            "sub_button": [
+                {
+                    "type": "view",
+                    "name": "投资理财",
+                    "url": "http://t.yinmimoney.com/invest/h5",
+                    "sub_button": []
+                },
+                {
+                    "type": "view",
+                    "name": "新手专享",
+                    "url": "http://t.yinmimoney.com/wx/open/index.html",
+                    "sub_button": []
+                },
+                {
+                    "type": "view",
+                    "name": "热门活动",
+                    "url": "http://t.yinmimoney.com/activity/h5/activity",
+                    "sub_button": []
+                },
+                {
+                    "type": "view",
+                    "name": "现金红包",
+                    "url": "http://t.yinmimoney.com/myRedPacketRegist/h5",
+                    "sub_button": []
+                },
+                {
+                    "type": "view",
+                    "name": "我的账户",
+                    "url": "http://tm.yinmimoney.com/h5",
+                    "sub_button": []
+                }
+            ]
+        },
+        {
+            "type": "view",
+            "name": "米金社区",
+            "url": "http://shequ.yunzhijia.com/thirdapp/forum/network/56de766ee4b03ebe8c1eb695",
+            "sub_button": []
+        }
+    ]
+}
